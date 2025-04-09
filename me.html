@@ -1,0 +1,106 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Mail, Linkedin } from "lucide-react";
+
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-white text-gray-900 p-6 md:p-10">
+      <header className="text-center mb-12">
+        <h1 className="text-4xl font-bold">Kushani Vaidya</h1>
+        <p className="text-lg text-gray-600 mt-2">Driven by Passion, Defined by Purpose</p>
+      </header>
+
+      <section className="max-w-3xl mx-auto mb-12">
+        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+        <p>
+          I’m a dedicated professional with a strong background in HR, administration, and customer service.
+          Passionate about organization, communication, and creating positive work environments. I bring a blend of precision,
+          empathy, and creativity to everything I do.
+        </p>
+      </section>
+
+      <section className="max-w-3xl mx-auto mb-12">
+        <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+        <ul className="list-disc list-inside space-y-2">
+          <li><strong>Human Resource Management</strong> – Skilled in recruitment, onboarding, and employee coordination.</li>
+          <li><strong>Administrative Support</strong> – Experienced in managing schedules, documentation, and operational tasks.</li>
+          <li><strong>Communication</strong> – Strong verbal and written communication across diverse teams and clients.</li>
+          <li><strong>Team Leadership</strong> – Proven ability to lead, motivate, and support team members effectively.</li>
+          <li><strong>Attention to Detail</strong> – Ensuring accuracy and quality in every task, from reports to planning.</li>
+        </ul>
+      </section>
+
+      <section className="max-w-3xl mx-auto mb-12">
+        <h2 className="text-2xl font-semibold mb-4">Experience & Projects</h2>
+        <div className="space-y-4">
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="text-xl font-semibold">Remote HR Specialist – Mehta EXIM</h3>
+              <p>
+                Led the full recruitment cycle remotely, from job postings and resume screening to interviews and onboarding.
+                Maintained HR records, streamlined hiring processes, and supported employee coordination for a growing export business.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="text-xl font-semibold">Human Resource Lead – GAO Tek Inc. (Remote)</h3>
+              <p>
+                Oversaw recruitment for tech positions, scheduled interviews, and collaborated with global teams.
+                Used Microsoft Teams to manage communication and workflows, and helped onboard interns and new hires efficiently.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="text-xl font-semibold">Admin Executive – Neha Creation (India)</h3>
+              <p>
+                Managed day-to-day administrative operations, including inventory tracking, documentation, and vendor coordination.
+                Assisted the export team with logistics, invoicing, and communication with international clients.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="text-xl font-semibold">Deli Clerk – Loblaw Companies Ltd. (Canada)</h3>
+              <p>
+                Delivered excellent customer service in a busy retail environment. Maintained hygiene standards, prepared deli items,
+                and worked collaboratively with the team to meet customer needs.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4">
+              <h3 className="text-xl font-semibold">HR Management & Organizational Behavior Project – MBA, Gujarat Technological University</h3>
+              <p>
+                Researched and developed a detailed report on organizational behavior and HR management practices,
+                focusing on employee engagement, motivation theories, and conflict resolution strategies.
+                Conducted surveys and interviews with employees from multiple sectors to gather data and recommended HR
+                best practices for improving employee satisfaction and productivity.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <section className="max-w-3xl mx-auto mb-12 text-center">
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mb-4"
+        >
+          <Button>Download Resume</Button>
+        </a>
+        <div className="flex justify-center space-x-4">
+          <a href="mailto:kushanivaidya@gmail.com" aria-label="Email">
+            <Button variant="outline"><Mail className="mr-2" /> Email</Button>
+          </a>
+          <a href="https://www.linkedin.com/in/kushanivaidya28" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <Button variant="outline"><Linkedin className="mr-2" /> LinkedIn</Button>
+          </a>
+        </div>
+      </section>
+    </div>
+  );
+}
